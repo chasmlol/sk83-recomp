@@ -33520,7 +33520,8 @@ longjmp_address = 0x82f25260
 0x82E69BA8 = { name = "rex_sub_82E69BA8", size = 0x6C }
 0x82E69C18 = { name = "rex_sub_82E69C18", size = 0x1A4 }
 0x82E69DC0 = { name = "rex_sub_82E69DC0", size = 0x88 }
-0x82E69E78 = { name = "sub_82E69E78", size = 0x30 }
+0x82E69E78 = { name = "sub_82E69E78", size = 0x18 }
+0x82E69E90 = { name = "sub_82E69E90", size = 0x18 }
 0x82E69EA8 = { name = "rex_sub_82E69EA8", size = 0x114 }
 0x82E69FC0 = { name = "rex_sub_82E69FC0", size = 0x258 }
 0x82E6A218 = { name = "rex_sub_82E6A218", size = 0x414 }
