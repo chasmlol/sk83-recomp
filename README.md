@@ -38,6 +38,18 @@ assets/
 
 The executable expects `assets` at the project root.
 
+The current config is known against this `default.xex` SHA256:
+
+```text
+4E49F302896A9BEC3B82CD19D5561247F1A50D6040E1A000F02299CE5B7CB7E9
+```
+
+On Windows, check with:
+
+```powershell
+Get-FileHash .\assets\default.xex -Algorithm SHA256
+```
+
 ## Requirements
 
 - Windows x64
@@ -87,6 +99,16 @@ Run:
 ## Troubleshooting
 
 If codegen reports hundreds of function errors, make sure you are using the `sk83-support` ReXGlue SDK branch above, then delete local `generated/` and `out/` folders and run the configure/codegen/build steps again.
+
+Also verify:
+
+```powershell
+git -C C:/rexglue-sdk branch --show-current
+git -C C:/rexglue-sdk rev-parse --short HEAD
+Get-FileHash .\assets\default.xex -Algorithm SHA256
+```
+
+The SDK branch should be `sk83-support`. The `default.xex` hash must match the hash listed above.
 
 ## Current Status
 
