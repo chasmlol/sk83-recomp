@@ -44,16 +44,26 @@ The executable expects `assets` at the project root.
 - CMake 3.25+
 - Ninja
 - LLVM/Clang
-- ReXGlue SDK checkout
+- ReXGlue SDK checkout from the `sk83-support` branch of this fork:
+  `https://github.com/chasmlol/rexglue-sdk`
 - A legally obtained Skate 3 Xbox 360 game dump/ISO
 - An Xbox 360 ISO extractor, such as `extract-xiso`
 
 ## Build
 
-Clone this repo and the ReXGlue SDK, then configure with `REXSDK_DIR` pointing at the SDK checkout:
+Clone this repo and the patched ReXGlue SDK branch:
 
 ```powershell
-cmake --preset win-amd64-debug -DREXSDK_DIR=C:/path/to/rexglue-sdk
+git clone https://github.com/chasmlol/rexglue-sdk C:/rexglue-sdk
+cd C:/rexglue-sdk
+git checkout sk83-support
+```
+
+Then configure this project with `REXSDK_DIR` pointing at that SDK checkout:
+
+```powershell
+cd C:/path/to/sk83-recomp
+cmake --preset win-amd64-debug -DREXSDK_DIR=C:/rexglue-sdk
 ```
 
 Place your extracted game files in `assets/`, then generate the recompilation output:
@@ -73,6 +83,10 @@ Run:
 ```powershell
 .\out\build\win-amd64-debug\sk83.exe
 ```
+
+## Troubleshooting
+
+If codegen reports hundreds of function errors, make sure you are using the `sk83-support` ReXGlue SDK branch above, then delete local `generated/` and `out/` folders and run the configure/codegen/build steps again.
 
 ## Current Status
 
