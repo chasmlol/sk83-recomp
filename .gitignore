@@ -1,0 +1,38 @@
+# Build output and IDE state
+/out/
+/.vs/
+/.vscode/
+/.idea/
+
+# Generated recompilation output.
+# This is produced locally from a user's own game executable/assets.
+/generated/
+
+# Copyrighted game data. Do not commit these.
+/assets/
+*.xex
+*.iso
+*.xbe
+*.big
+*.vp6
+*.abin
+*.mxb
+
+# Runtime logs, dumps, and local profiling/debug artifacts
+*.log
+*.dmp
+*.pdb
+*.ilk
+*.obj
+*.lib
+*.exe
+*.ninja
+.ninja_*
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CPackConfig.cmake
+CPackSourceConfig.cmake
+
+# Local notes that may contain machine paths/debug history
+CODEX_RECOMP_NOTES.md
