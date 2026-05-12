@@ -32321,6 +32321,7 @@ longjmp_address = 0x82f25260
 0x82E1A978 = { name = "rex_sub_82E1A978", size = 0x8 }
 0x82E1A980 = { name = "rex_sub_82E1A980", size = 0x8 }
 0x82E1A988 = { name = "rex_sub_82E1A988", size = 0x8 }
+0x82E1A998 = { name = "sub_82E1A998", size = 0x8 }
 0x82E1A9A0 = { name = "rex_sub_82E1A9A0", size = 0x8 }
 0x82E1A9A8 = { name = "rex_sub_82E1A9A8", size = 0x8 }
 0x82E1A9B0 = { name = "rex_sub_82E1A9B0", size = 0x8 }
