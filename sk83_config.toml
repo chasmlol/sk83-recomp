@@ -3749,6 +3749,8 @@ longjmp_address = 0x82f25260
 0x8246CBB0 = { name = "rex_sub_8246CBB0", size = 0x11C }
 0x8246CCD0 = { name = "rex_sub_8246CCD0", size = 0xF4 }
 0x8246CDC8 = { name = "rex_sub_8246CDC8", size = 0x88 }
+0x8246CEA0 = { name = "rex_sub_8246CEA0", size = 0x38 }
+0x8246CED8 = { name = "rex_sub_8246CED8", size = 0x38 }
 0x8246CF10 = { name = "rex_sub_8246CF10", size = 0x4C }
 0x8246CF60 = { name = "rex_sub_8246CF60", size = 0xF4 }
 0x8246D058 = { name = "rex_sub_8246D058", size = 0xF8 }
@@ -13292,6 +13294,7 @@ longjmp_address = 0x82f25260
 0x8273A5C0 = { name = "rex_sub_8273A5C0", size = 0x78 }
 0x8273A638 = { name = "rex_sub_8273A638", size = 0x148 }
 0x8273A780 = { name = "rex_sub_8273A780", size = 0x8 }
+0x8273A790 = { name = "rex_sub_8273A790", size = 0xC }
 0x8273A7A0 = { name = "rex_sub_8273A7A0", size = 0x84 }
 0x8273A880 = { name = "rex_sub_8273A880", size = 0xD8 }
 0x8273A958 = { name = "rex_sub_8273A958", size = 0x500 }
